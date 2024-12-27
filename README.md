@@ -1,8 +1,8 @@
 # Official Reica Package
 
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/soiposervices/reica.svg?style=flat-square)](https://packagist.org/packages/soiposervices/reica)
-[![Total Downloads](https://img.shields.io/packagist/dt/soiposervices/reica.svg?style=flat-square)](https://packagist.org/packages/soiposervices/reica)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/soiposervices/reica.svg?style=flat-square)](https://packagist.org/packages/soiposervices/reica-api)
+[![Total Downloads](https://img.shields.io/packagist/dt/soiposervices/reica.svg?style=flat-square)](https://packagist.org/packages/soiposervices/reica-api)
 ![GitHub Actions](https://github.com/soiposervices/reica/actions/workflows/main.yml/badge.svg)
 
 
