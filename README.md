@@ -1,9 +1,9 @@
 # Official Reica Package
 
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/soiposervices/reica.svg?style=flat-square)](https://packagist.org/packages/soiposervices/reica-api)
-[![Total Downloads](https://img.shields.io/packagist/dt/soiposervices/reica.svg?style=flat-square)](https://packagist.org/packages/soiposervices/reica-api)
-![GitHub Actions](https://github.com/soiposervices/reica/actions/workflows/main.yml/badge.svg)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/soiposervices/reica.svg?style=flat-square)](https://packagist.org/packages/soiposervices/reica)
+[![Total Downloads](https://img.shields.io/packagist/dt/soiposervices/reica.svg?style=flat-square)](https://packagist.org/packages/soiposervices/reica)
+<!-- ![GitHub Actions](https://github.com/soiposervices/reica/actions/workflows/main.yml/badge.svg) -->
 
 
 This package provides a seamless interface to interact with the getreica.com API, enabling developers to access its powerful image generation and manipulation features. Designed with ease of use in mind, this client simplifies integration into your applications, allowing you to leverage getreica’s capabilities for creating realistic images tailored to your needs.
@@ -61,7 +61,3 @@ If you discover any security related issues, please email luigi@soiposervices.co
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-
-## Laravel Package Boilerplate
-
-This package was generated using the [Laravel Package Boilerplate](https://laravelpackageboilerplate.com).
