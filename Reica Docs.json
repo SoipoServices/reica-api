@@ -1,0 +1,1332 @@
+{
+    "variable": [
+        {
+            "id": "baseUrl",
+            "key": "baseUrl",
+            "type": "string",
+            "name": "string",
+            "value": "https:\/\/stage.getreica.com"
+        }
+    ],
+    "info": {
+        "name": "Reica API",
+        "_postman_id": "bf3a7096-c80e-442b-97fb-2fbd44c898f3",
+        "description": "",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Endpoints",
+            "description": "",
+            "item": [
+                {
+                    "name": "GET api\/v1\/system\/options",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/system\/options",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/system\/options"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "location",
+                                    "value": "https:\/\/stage.getreica.com\/login"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "text\/html; charset=utf-8"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Origin"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "XSRF-TOKEN=eyJpdiI6InFaSEtWRnZ4L2dkWDNTOEw2czVJblE9PSIsInZhbHVlIjoidDgvWmNITXVPUWUzRWxYeDZEMURDbWt2cDdSemdVbXMzQ0RPTzl1NXlyQWNaYjN5T09iNEdlYS9NMnVVOTNydlRLQ2haU1RUdkFyWEQ3MFZkZWpiVjVJNVdnMGdNNDZVeVZ0S0JpUnRuTERRcEpmc0lIWWJHZVRYUkZuNklsbTQiLCJtYWMiOiI3ZDIwMTgwNzZhYTJkYzQ3ZjVmOWU1NjBlNjAyZDRhYTJiMzVmMzJhZWM2N2FkYzM0YTIzOTlhYWVkYmE3MGMyIiwidGFnIjoiIn0%3D; expires=Fri, 03 Jan 2025 14:09:11 GMT; Max-Age=604800; path=\/; domain=getreica.com; secure; samesite=lax; reica_session=eyJpdiI6ImJjZ0k5Z3M0OENtRlFHTkd1VVdibWc9PSIsInZhbHVlIjoiSGhSTFEvbDQzSzVCdEJjdTFHN2E1RnFWUUw4QnNORjZ4U1RKSjA5c3JDUDV4ZnhyQUx0UEN2b1QrMnQ3Smo1bmlnbUF4K08rc0piU2V3VTVQK3o4WHdlWW9DS3FRUmFnRmdMM0k4UHJwUFhmVlJ6MmlQS3J5NGRIU2dobUxudVMiLCJtYWMiOiIwMTkxZjk5ZTYxODBlMGViNzExNTQ4NDNlNDZiNGUzY2I1MTQ1MGU4NjFhNGNiOGNjMTE3M2RjN2IzZDhlNzhkIiwidGFnIjoiIn0%3D; expires=Fri, 03 Jan 2025 14:09:11 GMT; Max-Age=604800; path=\/; domain=getreica.com; secure; httponly; samesite=lax; C07wKX1NCG9B2CEvFVNmqejrjCrmRYzsFUg8Hanv=eyJpdiI6IkhSTU9oTlQra3dxdUNQRUtFSEYzbGc9PSIsInZhbHVlIjoiV2JJN0dHbTBTTTB4VmdXWFNlUE54N3hiTFo2ZjNvUEZwbU9yMi9HTXdYYkJOcmU2NTBySUxUWHc4U25HR1V4NkQrbUptbUhEaWcxOGoyZ1JJdHNKeStHaWtMMEhPOHI5WGxyVzZnbGlzWnJCd1ZtZVJ2WGJaa3Q1Q1lmUk5CY0hLRlZCZ3hUSUt4RzU1UGV2elRxSjg0RjFnaTZ0bzJ2cDFMdmRCZU9VM3NiM3liWm9IalB2SURmVzk5WmdrYmdMcEJIZjNzMzQ4eUVDeDFhbGJLUXl6R3hKOVUybEhwa21CV3BvMmJ1Rmg5ZmZVQ3AxRkdOVWJZUVh4eS9OTzdPMmlmV1pIN28yU29KbUI4NmF3dFFLM3BybGZOWG9TQ3lnM2lPQk1iQUpuakFhUHNkazFadFphVUlMeG0zb2pGZXhKZzRuRVUvOSt5eVJtMlJoMmVldVVNQlo5R3JsM2F1WUl3ZTdvTnBIdlRKWTQwWmk4OGlQNVlydnVQU1FCQzZJRXNpZzBFUDc5Vk40anM5SUE0bkNGUWJvaTEwNlZYWVptMy8vVHpYNUJTbU5DeDZBVDUyUHZqSUJTblJIZFk4Qm9YNnZEM0tuaXNKQnFkV2VwaXprOXBHZWlweERRTmh2NDJubDhTRUFOYXIzLy83OEx1VmkwSU1WbTBjZWt4QXNUK1d2c0lidFpBNURueEI0L2FXMmxJdm1tc0pZUDhDb2JCM0dYVkxQcFZRPSIsIm1hYyI6IjYzMDQ0MWY0OTEwMDc5ZGRiZGE1MjkxMmZiMDE2NjgyMGQ3MjY5MjhhYzk3MGE5OWZiY2UxNzAyZjI2ZTdlZmIiLCJ0YWciOiIifQ%3D%3D; expires=Fri, 03 Jan 2025 14:09:11 GMT; Max-Age=604800; path=\/; domain=getreica.com; secure; httponly; samesite=lax; 4ZHnA2M3L37raX70NSfaqdbrrVK4SieFLeookkQJ=eyJpdiI6ImZmTlU3SUtTU1B6cjRldnFHbmc3ZWc9PSIsInZhbHVlIjoiOCtCUHV2WUtJZGFKZnZDZlBvaVgrSEJiWVFTUk9EYkUrL20yeWROelcxZHdHaHppcUFWd25KZUt2WER3Z243VkpUTHViaS8rODZkeHd5YVA2U2Rnb2lxVTd4T3RkUW52TGVoMFAvalE0Mm5DK3p6a2dQdG0vWGZNZkVndEoxdkFFUVRZQUZ6cmtDelcvTGlOM0dCUk1rQWZaendWVk9XU0RINStTOHRObEw2OHdyWVQ4STUzVHJMYTdqcUxjdmU1YVFwT1RjREw3YUVNVGZ5OVp1N0prMmwwdGkxS0ZvdWdyTGtwa2gzZHF0ZU5qK3M0TWxIVThPeWRaOXZYc0hCckUrNmdnaEtqdU5sQlJwNkZWcXVDb3M4YzBmcEhWdklmVVFxK1cvbnJNVkdPS1JzZW5iSERQZGV0NnIyaFIwQmVpVDJCc2syMVVrR0xtNjR0LzhyaHYzVkNseS9hbUp4bHZXUkt2T3RvTkdXUHErS253Qjc2L3hvSUV4c2xsRlgyMitjNm5jUnR1VXM4S2s2K1J4T1ZWZXN1aGZFT3RCMzMzL0pzUThQUlFpeCtvY21vYStkeUpUVUhJNmY3OHllTmsyaGxGdERacXhPVWpmUk5DWmx5VzJUYWNEay95RGJybUNWTXIzRURDVjRyOG9sT2tiVm5WRms2WmxxRUU1cmJaSkYyRFJWQ1RuVjVwU2RHVzJha3VYMWxTWkpSZ2crTURBRDMrZzNxQ1NBNlZ2bzB2M1dqTnQ0T3RYRTBoYjZEaVBxVnJlUGNHYlFjVGplaXdIR3BSUT09IiwibWFjIjoiMGJlYzhkNDc4M2UzZDdmMWZmMDZhMjQwMWRmYWMxNTY3ZDEyMGQxODM3YzI3ZWVhZjFjM2M2MmIxNWFlOTYzOSIsInRhZyI6IiJ9; expires=Fri, 03 Jan 2025 14:09:11 GMT; Max-Age=604800; path=\/; domain=getreica.com; secure; httponly; samesite=lax; mdQ5sQkU7pcHGMvqPInpf1FGGxitJuLAh3nm8BFE=eyJpdiI6IjZVdDNiRjFBNFBOb284ZU1vZ3dJVXc9PSIsInZhbHVlIjoibFJQQzRNeUpMTVJCaFZFYmhaSkJORk5qMTdkMDRNcitRdDdKekhvSThtdTVVT2ZtaE5ERG81eUxuMnRtTCtHZUNMTEMzaFh3cVRFY3UwMHN6WjNJVUV3VUpheVEzYkJLVFZYNFFuM2xBZDd1VDBSSWhTOEVRZ0NXcjFRVGR0cFdSaU40bWJVRnFieXM2MDh0bEhqcnVLSDRrQ2w5bERKcTFmRkVkemdQMFlaellJZEdLYkwrTVZETkxIQzliOUliL2N1bHBzZmRtVWdvME5NTHQ2NG5YS3ZlUUg1dFhFU0xBUzJlREo1ZVo4bXRZcUJzaTAyVEErN2RqZDNkaXNteEh2U0p5T1p3KzVQOXFDMmFiMlJibjlIU0R5YWpzRWVPcU5CNzl5eEhIZXJnT3pYdFF1MXdBZHZFeFhseTBNQUtoTE93Rmtka2Q5QkwxTGtTSC9JNDVselpXVHc3MThOMjhZNDVXZ0VQRFRpOFNlV2hZQ3JzeDg4QndMa3RpcTVNYkREWmZiQ0pwU0pVZXhmck1TODZuZUJaMUNINk1LZlk1L1p3elJnbnFYNzRmTklOY05lMC91ZjdEK0s3bUVXa3pJYXBvSVhkNElPRGtwYkFQQTROaVdJWm1ia0hNUm9Pcm0zY2JKdDBEdEFOclk1WGxWUDYzZW5QeUo0QXN4UU92allLeitjaS9LS1FOWWt5aXZmS2VxejhMaEZBVFNkRCt4T2E2N2RwNDBYOERrR1FNZ21McDBMMDdPUmdxanBLa0JjY09KRHY0cXBGWVhFOWZoOHBJZz09IiwibWFjIjoiMjI5MmUyY2Q1Njk1MTBiMDM5ODhlOWE4ZjEyZTdlMWYyOTJhYWIzOTk4NjZiZWM3ZDA0MTFlOWNhMzU5NWMwMiIsInRhZyI6IiJ9; expires=Fri, 03 Jan 2025 14:09:11 GMT; Max-Age=604800; path=\/; domain=getreica.com; secure; httponly; samesite=lax; xSZdS0z3tRjLDMBXAhNsFpGYBVosqJX6lzCq3tOo=eyJpdiI6IldnM1dmTHdHd29FRURSUElGb3hvRFE9PSIsInZhbHVlIjoiVTF3cnB1VlNiaytsOUh3Mkg4Q0I2clhtbm5vTmxodlR3azI0R04xaVV4azluVG5KWnYrOW1HZDg4TXBMMFRMNjZoRU5vb2llSmhBZDBmdWtlUmVVR1Bla2FRdW1wWUxsSnRYa0drQXZucnVJQXJUUUJSMTAxbTRsdmZOUmRhZVI1UExaQU9SYmtsVVFwQ2Z1S1p6NW1haUlRVjQyZm1KM2NxY1IyUkEwT1FkMDZqM3gwRUlNbmVXeGFBbkxTS21DZFJJdnNsSWR4amxWUXpoRGtkd2RHUlIzWEVoclZibllYMGVjZmcwa0w0QURnOFgxNTJDcW9OaTkrWUJaanQzUi9xV1FCMmxUZDZqMExWZENLTjdja043eFdXRFlSMXY0clhPTVM0eWxqRk1PbUdrdkRpbFYwZnA5Y0NUZmcvZ0tENDhITWgxQ0xjRTFEakpQR0hxR3d1TFZqZ2tCZU5yVmFnN21nUlcrRUJ1S2FVSlRHd0UweGJjWmV1Ri9WY3hnZHl2a3F6UWV1RzhsdlVESGRPT3pMZHg3VWlqTzQ0YjRMQ3ZOUEp2alZYMEZlbVg3THZNVFlsdm1zRUo2bmdPRmxIeEt3dGtMclRGeWRGMHBFY0c5RDZLc0hqZEhYQnJLaURHVTd1c3Q1bjI1WnVqenMyM25kT2JmeUZxeEE5aTJFandzSkExSGJJUHV2a0FLQ0ZVWEE4NWRFU2cxTDY0cGNEK2JVdVhNM05RPSIsIm1hYyI6IjQ4ZDZlNWI4YjcwOTZiN2UyNmE0ZDlmMWUxMWY1NTIwNWY4MzQ5Njk4ZTQwMWJjODI1YjcxOTg1ODM4NzhmYTYiLCJ0YWciOiIifQ%3D%3D; expires=Fri, 03 Jan 2025 14:09:11 GMT; Max-Age=604800; path=\/; domain=getreica.com; secure; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 302,
+                            "body": "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" \/>\n        <meta http-equiv=\"refresh\" content=\"0;url='https:\/\/stage.getreica.com\/login'\" \/>\n\n        <title>Redirecting to https:\/\/stage.getreica.com\/login<\/title>\n    <\/head>\n    <body>\n        Redirecting to <a href=\"https:\/\/stage.getreica.com\/login\">https:\/\/stage.getreica.com\/login<\/a>.\n    <\/body>\n<\/html>",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "POST api\/v1\/rerun\/{image}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/rerun\/:image",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/rerun\/:image",
+                            "variable": [
+                                {
+                                    "id": "image",
+                                    "key": "image",
+                                    "value": "asperiores",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Folders",
+            "description": "\nAPIs for managing folders",
+            "item": [
+                {
+                    "name": "Get all user folders.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/user\/folders",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/user\/folders"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "This endpoint returns a list of all folders along with their related information for the authenticated user."
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\"data\":[{\"id\":\"01jg4768txt5wn106qh2yhjq06\",\"name\":\"expedita\",\"type\":\"model\",\"user_id\":2036,\"parent_id\":null,\"created_at\":\"2024-12-27T14:09:11.000000Z\",\"updated_at\":\"2024-12-27T14:09:11.000000Z\"},{\"id\":\"01jg4768v8p4mprdprp74d5gee\",\"name\":\"exercitationem\",\"type\":\"photo\",\"user_id\":2018,\"parent_id\":null,\"created_at\":\"2024-12-27T14:09:11.000000Z\",\"updated_at\":\"2024-12-27T14:09:11.000000Z\"}]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Get all folders.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/folders",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/folders"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "This endpoint returns a list of all folders along with their related information."
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\"data\":[{\"id\":\"01jg4768vzxem9202jktvjjehq\",\"name\":\"repellat\",\"type\":\"background_removal\",\"user_id\":6,\"parent_id\":null,\"created_at\":\"2024-12-27T14:09:11.000000Z\",\"updated_at\":\"2024-12-27T14:09:11.000000Z\"},{\"id\":\"01jg4768w64zexrmd970yyzdvy\",\"name\":\"rerum\",\"type\":\"model\",\"user_id\":4,\"parent_id\":null,\"created_at\":\"2024-12-27T14:09:11.000000Z\",\"updated_at\":\"2024-12-27T14:09:11.000000Z\"}]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Create a new folder.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/folders",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/folders"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"ut\",\"type\":\"atque\"}"
+                        },
+                        "description": "This endpoint allows the authenticated user to create a new folder."
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\"data\":{\"id\":\"01jg4768wqjrpfh975pxj2g6xp\",\"name\":\"aspernatur\",\"type\":\"background_removal\",\"user_id\":6,\"parent_id\":null,\"created_at\":\"2024-12-27T14:09:11.000000Z\",\"updated_at\":\"2024-12-27T14:09:11.000000Z\"}}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Display the specified folder by ID.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/folders\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/folders\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "01hw2wgwt38zky8sxhpjqhh4ps",
+                                    "description": "The ID of the folder."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "This endpoint returns the details of a specific folder for the authenticated user."
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\"data\":{\"id\":\"01jg4768xegxz3zmpwz38tnc3v\",\"name\":\"vitae\",\"type\":\"background_removal\",\"user_id\":1101,\"parent_id\":null,\"created_at\":\"2024-12-27T14:09:11.000000Z\",\"updated_at\":\"2024-12-27T14:09:11.000000Z\"}}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Delete the specified folder by ID.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/folders\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/folders\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "01hw2wgwt38zky8sxhpjqhh4ps",
+                                    "description": "The ID of the folder."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "This endpoint allows the authenticated user to delete a specific folder."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Create a new child folder inside an existing folder.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/child\/folder",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/child\/folder"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"folder_id\":\"error\",\"name\":\"voluptas\"}"
+                        },
+                        "description": "This endpoint allows the authenticated user to create a new child folder within an existing parent folder."
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\"data\":{\"id\":\"01jg4769aecsgbk9a321n99jdg\",\"name\":\"dolore\",\"type\":\"photo\",\"user_id\":2096,\"parent_id\":null,\"created_at\":\"2024-12-27T14:09:11.000000Z\",\"updated_at\":\"2024-12-27T14:09:11.000000Z\"}}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Add a new image to a folder.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/child\/image",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/child\/image"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"folder_id\":\"incidunt\",\"name\":\"et\",\"url\":\"http:\\\/\\\/www.pagac.net\\\/reprehenderit-eveniet-sapiente-nesciunt\"}"
+                        },
+                        "description": "This endpoint allows the authenticated user to add a new image to a specified folder."
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\"data\":{\"id\":\"01jg4769brg3wazjyhv72asq03\",\"name\":\"mollitia\",\"url\":\"https:\\\/\\\/via.placeholder.com\\\/640x480.png\\\/0022ee?text=et\",\"image_size\":null,\"user_id\":2143,\"request_id\":\"01jg4769bp1dvm07v57hsx93md\",\"created_at\":\"2024-12-27T14:09:11.000000Z\",\"updated_at\":\"2024-12-27T14:09:11.000000Z\"}}",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Images",
+            "description": "\nAPIs for managing images",
+            "item": [
+                {
+                    "name": "Get all images.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/images",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/images"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "This endpoint returns a list of images\nfor the authenticated user."
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\"data\":[{\"id\":\"01jg4768zken6qpgsp5t9rxwqr\",\"name\":\"quae\",\"url\":\"https:\\\/\\\/via.placeholder.com\\\/640x480.png\\\/0088ff?text=ullam\",\"image_size\":null,\"user_id\":2135,\"request_id\":\"01jg4768zgm2qkb7rd0h4mt7yr\",\"created_at\":\"2024-12-27T14:09:11.000000Z\",\"updated_at\":\"2024-12-27T14:09:11.000000Z\"},{\"id\":\"01jg47690qwdwahh1hwqfsyxt9\",\"name\":\"neque\",\"url\":\"https:\\\/\\\/via.placeholder.com\\\/640x480.png\\\/00bbff?text=rem\",\"image_size\":null,\"user_id\":2137,\"request_id\":\"01jg47690nj65bdc3m3qr2vkx1\",\"created_at\":\"2024-12-27T14:09:11.000000Z\",\"updated_at\":\"2024-12-27T14:09:11.000000Z\"}]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Get a specific image by ID.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/images\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/images\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "01hw2wgwtfkv72gef7sf4ax7wf",
+                                    "description": "The ID of the image."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "This endpoint returns the details of a specific image\nfor the authenticated user."
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\"data\":{\"id\":\"01jg4769214bgj6qevy1ahk9gp\",\"name\":\"enim\",\"url\":\"https:\\\/\\\/via.placeholder.com\\\/640x480.png\\\/00aa88?text=ex\",\"image_size\":null,\"user_id\":2139,\"request_id\":\"01jg47691zej7wm43jy5bnqqqq\",\"created_at\":\"2024-12-27T14:09:11.000000Z\",\"updated_at\":\"2024-12-27T14:09:11.000000Z\"}}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Update a specific image by ID.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/images\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/images\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "01hw2wgwtfkv72gef7sf4ax7wf",
+                                    "description": "The ID of the image."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"esse\"}"
+                        },
+                        "description": "This endpoint allows the authenticated user\nto update the name of a specific image."
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\"data\":{\"id\":\"01jg47694rx4tf24sfx58jz8pv\",\"name\":\"aperiam\",\"url\":\"https:\\\/\\\/via.placeholder.com\\\/640x480.png\\\/0066ff?text=eaque\",\"image_size\":null,\"user_id\":2141,\"request_id\":\"01jg47694mrc6jtayc2v6swk9h\",\"created_at\":\"2024-12-27T14:09:11.000000Z\",\"updated_at\":\"2024-12-27T14:09:11.000000Z\"}}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Delete a specific image by ID.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/images\/:image",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/images\/:image",
+                            "variable": [
+                                {
+                                    "id": "image",
+                                    "key": "image",
+                                    "value": "01hw2wgwtfkv72gef7sf4ax7wf",
+                                    "description": "The image."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "This endpoint allows the authenticated user\nto delete a specific image."
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/v1\/download\/{image_id}\/{format}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/download\/:image_id\/:format",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/download\/:image_id\/:format",
+                            "variable": [
+                                {
+                                    "id": "image_id",
+                                    "key": "image_id",
+                                    "value": "01hw2wgwtfkv72gef7sf4ax7wf",
+                                    "description": "The ID of the image."
+                                },
+                                {
+                                    "id": "format",
+                                    "key": "format",
+                                    "value": "id",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "location",
+                                    "value": "https:\/\/stage.getreica.com\/login"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "text\/html; charset=utf-8"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Origin"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "XSRF-TOKEN=eyJpdiI6IkhnOWFjNTdLVjk3SzFHWGxqR0k0bkE9PSIsInZhbHVlIjoiMFFPem9lWHE4UHlvQWx3eENObUJqRXZMYnAyRk9aKzF1a2VpTjJpM09ZdFJ3UGRtZ1I4NlVrVFVaa1dIUi95d0RNY2ZnY3J3NGlUbHRPeXZDZ2liN2R5Y3o2ZnhaVXVCa2V2cXVlUzNFVll6dk1Cc3diL0tQN3pmYVIxMU00RnYiLCJtYWMiOiJlYWM4NGQxZDFlMDgyOTAzYTRhODFmZGU4ZGViZTQ4MDg2NmY5OGI1MDQxM2IyYjE4OTQ3YmFiNjUwYzA1MzM2IiwidGFnIjoiIn0%3D; expires=Fri, 03 Jan 2025 14:09:11 GMT; Max-Age=604800; path=\/; domain=getreica.com; secure; samesite=lax; reica_session=eyJpdiI6IkhDMWJBaDJ2cHBFS0pLcHdoN0JPaXc9PSIsInZhbHVlIjoiL1R6U1UrQU14VDlSU1E4OS9Fc3FyYmpmOWMxMSt3WWkyMjBLMzM5Vkk5ZE9GZ3RqaTg4dG9NWW10V0RwMzhOSVpISEEwWlkwN1BGeWEzSWowRW1UWGl0RmxlZ2UyT1pZTnpZNWpxU3dmb1I1QTZRbGRPT0xoNWtQZmZza25yRjMiLCJtYWMiOiJhYzI2MThiMTEzMzZiNzg5OTU4N2RhY2NlZTUxMTJkYjUxNzI5MzA0YjZjYmJiOTBkYzI1MGIxNTc2ZTRhNWIxIiwidGFnIjoiIn0%3D; expires=Fri, 03 Jan 2025 14:09:11 GMT; Max-Age=604800; path=\/; domain=getreica.com; secure; httponly; samesite=lax; C07wKX1NCG9B2CEvFVNmqejrjCrmRYzsFUg8Hanv=eyJpdiI6IkRyUVVTK2kyUHVLN1hDS2NKNVU0WXc9PSIsInZhbHVlIjoiblJFL1dYNmdOZ1NvYWtPM3JON2NYSU5qcVRtWk5MZ3BWSDIxQWhpcStpWlhyWk9GVVRJLzFVdjJqV0tYY1A3Qzl6NGd0MHkyRTY5U3REeHNTR3B0bjk3V1BqRURETWZaN2tBWG53Z0kySjZvMDlEakEzQjByQm1qUnhkZkpjOTdlRFF2Qkw2OG56RzhIRmtuOWdiSVowOEtGcVlkM0xqRThLU2kxOTBYQnV5UHpweXNmSUJZd2xEaTBQbGFDTGpBTjFWb29uemw5d01IbkUreWdlVlNUeWJXQ2poUnU0ZndnOUZNNlRLdmRnL0RzMFJGN3Z2Z1c2V1RjTnZtaGFIVnl4OW16dC9zUWFLWWllZWtEMFk4UXVVUVZ2UmxRTk45UGlzSjZoL25CZS82VTRHbkdzbkFaUkx0aWgrR3p1QW1RTGpObWdPaXlCYTcxTCtRMEM1VDBaMVI5aDhQbWY4cmxtSHFNODdidnhvc1VPYnVRaWp0RlVtT0VUZnY5ZEdXY0hoMGlabXEyeDU1b1dQNlRhZTAvZk91RmdCbXBmWGVldU5LYzJVWGVmSnBjd0ljd0lvNmsyMjNBTU85VjVNM2lIQlJDNGorSDF0SFVPOGx3bWh4WjZhK3FrWElQZTZ2aG54WUZvZ25CaGhXTlZBQ013ZEVoSDZnOUJiVmpPaGxXVDZBR21QZlFqZ0MyVVdFYU52eTZSMTQ5cGN0MDBQTnY3NWxyKzZHZks4PSIsIm1hYyI6ImYzMjQ3MWNkOTdjMTExMDliOTg1YTc1Yzg4ODY0ZjIwNzkzNTlmZTU5YmVkOWZmMWE1Yjc4ZWY2YWM0ZTBhMmYiLCJ0YWciOiIifQ%3D%3D; expires=Fri, 03 Jan 2025 14:09:11 GMT; Max-Age=604800; path=\/; domain=getreica.com; secure; httponly; samesite=lax; 4ZHnA2M3L37raX70NSfaqdbrrVK4SieFLeookkQJ=eyJpdiI6Im5vUzZYTWVYZjM2YklRSE1hWm5iSWc9PSIsInZhbHVlIjoibVJwbzI1U2ZiOVM4N0w5blc0eGxMeU52UTJDZERZSVV3dTVoVU5rSDRWT2hLZXZxVkZMWTBLTGFQZ1l1UWZGVmg1aXR0SmhLUXdwc2dNd3RhcFdwdDFlYU5TMzJGUXYrZzRmWG1rSnJKZ05odU9VWm5GTE9jK01CMDZZY3AzbndMZ05FYVhnR2dNN3l5RXQ1VDdiQkJ5ZnQyeDJXb2N2empEUkxOanlTSzI4eUsxTlRDeHNWQ2E2WFhoK0R5bG0xelo0Z1doSk5HK0NSMGYvYm1pRThpZUNBZFhZOXoyVHpBVm9mTk1VRjNhK21vYS9td3FzZFNNWiszckpja2N0Q0JsUHhOdWlEdzVDbUlyalNpdVNBWS8rN2xTYmYyTzlwb1dubVpoZUplWnRFT0FMdTE5eXRIVVBQaWdKR3ZHMldQQkNRTkhnbHNUa2pZSkhJU0hWQ05TM2lLUlc1RjhsK2Q3ZUVwVUJrbGU3NG03Um5wcEgxdERaaVNHcmlnVnJ4WGovaVp4SHQ4Ti80S3ZyWWNLS0hQUWkyTTRBcUNQRDBCVjJObWRSNGJrdWtPeVZ4TkNJdEdZaS9jNHc5czdqcmVkZlVIejUrblJ2VGZKcFdicGpuZjY3V0NEdXU2dFNDTkhPcFZBdFFQMTdkdnBURy9CaStDRzR6MTdvWFMwVlV5Vk1mVVY5VHFaWEd0VTdwWWZpRlk5U2p5eWRPN3VsdmhMT2NVU0t3S3I0RzFiamd6eUpPSmdzNEV5Zll0ZEtOTlpUejFITGhYMzcxVmgrVWhzYkhLUT09IiwibWFjIjoiOTBiMmMzZjNmMDU2ZmIwYzQyY2Q1MTlhZjk2YzdlYzM3MzViMjZiM2MzOWExOTM2NjFjMWQ2YTZjYjRhN2MxOSIsInRhZyI6IiJ9; expires=Fri, 03 Jan 2025 14:09:11 GMT; Max-Age=604800; path=\/; domain=getreica.com; secure; httponly; samesite=lax; mdQ5sQkU7pcHGMvqPInpf1FGGxitJuLAh3nm8BFE=eyJpdiI6ImE2ZTRTT3Bla3Q0Ym1HQ2NrbGpnN1E9PSIsInZhbHVlIjoiY0lNSG9heURLN2hVTjBBOHB4ZE9VT29yRGhqeWNobzZGRWkyUHZtSkpFNVlVL1VZZlVnZ1owcmdEaXNHZzdaak1sT3UzN3hiTFZzQUFyTWxtWmx1RjJnTDhWTHdkQ05wTVRLVElTajFqWk9LalpUYUNTdVdjaElDVzVjdndwdGs2TWFVOXlORkszZUtqR3FERllJemdCYXRNQ2RzNkwzdlgyTzNoRG1BQVZTMFpTZHBXNUROT1RCQlJyakwrbTI3TUYwOGFNeGMwVFE3UmgybUtjbTh3NlRKRGxkQWYrelh3cUNVZkZBVmhvM2xSM2tlU0JDZENxVk13ZDRoNXVudzIwTUVObWg2QUxTYjVwR2VQUHJZWllleVBHNWppL0pHMnl6ZWtqUW1LdXhqQkVrMkhvelNkYy91SWFubmt5ZEROZElBS1ZlZGd4NWZtalBScHljWktNTU9aRXlLTFc0dW9NTENsdnFJd2R1WUJSc0ZjS3NjVjZVQ1YxL3N1RGxoK1hYUDk4Sy9WQVlITW4wWm5XUXJKTTNHSU5rN0JHQVUxMzdBc2Y5WG02MUM3L2prWE9LNUdkMEpFVWNjMHVmQTFrOG1adnZlNERyQ1g5dFppa0xiR2JCamN1LzJteXBsZEwwanBPaEdKSXB0Y2dsdFRrVk1KbGN2ZXFHQWFibzJ6VWNCU1Z0em9vNEYxYzMyYkNCVEJPSVFFMGZ2ZEVyd0JldUY4bEFLNEQwU0RudTd4MThadmNWdjl5SFMyN1hGYURJcG5FRWUxOWdSV2hOS1ZGSE9Pdz09IiwibWFjIjoiYThmNDUxNjM5N2Q5YmIxNjI3MDg5YTMyZTRiMTBjNDQ2OGIxOTA1YjQ4OGZmMmYwNjVhNGYyZTIyZDdlMWNiMCIsInRhZyI6IiJ9; expires=Fri, 03 Jan 2025 14:09:11 GMT; Max-Age=604800; path=\/; domain=getreica.com; secure; httponly; samesite=lax; xSZdS0z3tRjLDMBXAhNsFpGYBVosqJX6lzCq3tOo=eyJpdiI6Imh1d25rQ3lRbHBqUVd1SU1HUXBWWnc9PSIsInZhbHVlIjoicUtoNTBBZWtlRGpOeDRZY2dPcGFPOUhUY3pHa1pOV253YzlkZHdKR1BUZVhMUEdPTHFYV0hMRXY0dFRDVUpXWTZFbXF2dE1HWkdaNEM4Um11TjUrTzRId1U2anBxOURMOUZFM3BBSnlhdjFMdWJIeDVwblh2U29Sa2FOaVliQTAvRjBzRmREeEhjNUJPZlJnanZyblBkL2lxZFhOdHRhR1ZsL1ZIUG1SOFN3bGtESmVic2JXbjlYQ05FNUFnMmNreVR5YkVDWnJrdmdieWFDbDJETDNtUVU1bnhkY3ZkN2w2S1N5dUtGaE42bC9nNnh1eUFEN0FYNERqcDVhM05wcStpZXNpNEJsckVFbmtxZWx4cXBES1YvYzc2ejBZNlpTUnFuZHM3UXBOWXJDcXVHbUZLY0xId3VIbFRscXV2T3Q3NEg3eEZDalhVOTY0OVFJUVNDMHBYSVBSRG81b2dRT0FsZjlzakpFalBoUTdiWmw2eXBIR21vR1B4YXRkajRZVUk5TGhLbFNqby9hY1pKMFBEeWJPK0RtaUlSRXh0RGdTY21ZdFBCWnZOajNNZ2xPUnNnV0dqcGRmRml3dmdDRnU4b2E0Z1g2cXV3eTVMSUVrZ0FFZDNmMHNVV3FLdVd6aWFFOVpIa2toMGRJdXB5eTJMalpPQ1NKUDFrNU9WTkk1eHExWE13UUhWVDhReERseDErUUVOS1RkU0ZJY3ZPYmNianhFZWZQUFJVPSIsIm1hYyI6IjA2YTI1NGQ2M2MyNjg3NTdkZDk5MGUzZWRiYjIwNTE4YjZmOTI5MWIwMWQ0ZjFlZjJhNmIwMjE4NGM2NTM0OTIiLCJ0YWciOiIifQ%3D%3D; expires=Fri, 03 Jan 2025 14:09:11 GMT; Max-Age=604800; path=\/; domain=getreica.com; secure; httponly; samesite=lax; 1UWMnSbHKrKQ7glkizsiV44Qn0amdY89aE3qjxxd=eyJpdiI6IlU2OTFKb3M3ckxjaGRaZUV4N2xCY3c9PSIsInZhbHVlIjoiZ3ZEaEZmcXFzVzB5QnFmNmptY2w1MzJzUEdib2FKR1FYbXBHUEZDdEQvWnJ4eGhVakJ1YzdQUTRKZGRFUUE5aFJ4akNMRmFZbE4xbm9URW9TV1JLYzNVSllkTDdldGhWdlljczMzK2cyUWVTZ1laMFlhbm14TWRDRGtmRW81T2RFVnA0cXpXT2gzbXY0K1E4VWJVVExpMFUzUXA5SUMrNy9zVVVZM0Jwam1nS2RnUzJ4Sk0wU2t4TDZOcDVuSkhjTjNpcnZpcFNlN21yMXczYnc5c0gxR25RSWxtcFp6aEFlUlZPUXhYQXl6TkFUNWlzVURlNml3WWxmQmxSNE5CZlJzSzZBOTJONjMwdjM2czZnTVBaMkNIVDh4LytHYzRGVDVYN2sxWTJKT2h0MGRsUUk0ekZqb2VrNzVISThwNlVYQ21OMGJJTmxKT25PblpSSVJyZ2RlRXZYM3FKVVRSSlU0TGJXckdEV0Q1cjBlY0Rnc1dUZlQ2Rld1emQ3djl6bUdUallnQnRZck5qYXFSRmZCNERGcXIxNkczK1Zib2E0OFdXY3F3WEw4VDdMbjVocGtuZGJiMmdJWVFqTktQN3ZNSFkxUjdzZUtURFllZ1ZVYS9kUWhzOXJJaE1EQnRMMG5KbDNuaE9POXlxWk0xUWN1UWpRTVlMdFU0TU03RDAwWjA3OTY2OFdXUlNJN2R0VkFZMlptRExTUy9oWmU3Z2xyK29ZT3ZBUU01bGNNUU5XOXkrZ1BwcnZxSzE5WXhjeGhnMS9qOUo4aUE1SGcwZU9MNEQwS3pIeXdVVmdSZmxiOW1UKzY5Vy8rYz0iLCJtYWMiOiJkNmMxZWI2YTZjZTIxMTEyMGM2MzJkMDU3MGM3ZDFlODI0YWFjNmQ0NDk1MmJiZTQxODdiYWU1NmFlMzc2YTZmIiwidGFnIjoiIn0%3D; expires=Fri, 03 Jan 2025 14:09:11 GMT; Max-Age=604800; path=\/; domain=getreica.com; secure; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 302,
+                            "body": "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" \/>\n        <meta http-equiv=\"refresh\" content=\"0;url='https:\/\/stage.getreica.com\/login'\" \/>\n\n        <title>Redirecting to https:\/\/stage.getreica.com\/login<\/title>\n    <\/head>\n    <body>\n        Redirecting to <a href=\"https:\/\/stage.getreica.com\/login\">https:\/\/stage.getreica.com\/login<\/a>.\n    <\/body>\n<\/html>",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Notifications",
+            "description": "\nAPIs for managing notifications",
+            "item": [
+                {
+                    "name": "Returns all unread notifications",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/notifications\/all",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/notifications\/all"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "location",
+                                    "value": "https:\/\/stage.getreica.com\/login"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "text\/html; charset=utf-8"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Origin"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "XSRF-TOKEN=eyJpdiI6IjRDZExtUDdMbWVkUWFkeEhBVHlUM0E9PSIsInZhbHVlIjoiV2JaaDFtWDlwUFdrRjQxWnB6amxGRFY4RmU5c2k0MGxEWHlIREwxR24rRmlVajhWSTBqT0dYbmdnWWxQckFGczNaK0hINnFoU0ttWWtBNkgvZ0V1d2ZjQXhmVWhXZUFUem53UnZxOEV3aVY2dUZrenFDblk4ejJuT2VtT3lKWVoiLCJtYWMiOiJjNmMwY2FjZDY4YTk4MTVmNTVmYTA2YzFmOTQ2NTg1ZWJjOTY1OTdlM2Q5OTRkMzI2MGM2OTYzMzg5NzVlYTQ5IiwidGFnIjoiIn0%3D; expires=Fri, 03 Jan 2025 14:09:11 GMT; Max-Age=604800; path=\/; domain=getreica.com; secure; samesite=lax; reica_session=eyJpdiI6ImpkS1JlamprcDJaUHpZR2JuTmpGeVE9PSIsInZhbHVlIjoiaGxndzIvaFNpMzdhZ2Z2ZmVmamJyWGY2ZHU0YU5IMVhxRm9mRHRlK3NWWVRYbjhzVzhjcHJPbmFuZ3FKSzcwL0dTWEIzRVh5TG1CWUtwdHRHQVpWbm8rT2NEejVJOUdXZTExajVZYnJ2VE40Z2xuTGxJajdkM1NhSU1BQmkwK1MiLCJtYWMiOiI0MGE3ZTQzOGE3NDFmMGUyNzA5MmNhMTY1ZWJmNmUyMTBmNDE3MDY4MzZiMmRjM2UxNGQzYzA3MDQ3ZDVmNDkxIiwidGFnIjoiIn0%3D; expires=Fri, 03 Jan 2025 14:09:11 GMT; Max-Age=604800; path=\/; domain=getreica.com; secure; httponly; samesite=lax; C07wKX1NCG9B2CEvFVNmqejrjCrmRYzsFUg8Hanv=eyJpdiI6IkhBQlkrZ3B3TnQ3WW03SkJUdFF5Ymc9PSIsInZhbHVlIjoiaTlNTlNXR3ZOT3VqNEd1Qks0UnFVNTJET082aFlWVzlSeTdHS3owNlpXVWdtM2UrVkVYclRjZGhxRllpZmkxbmtpUFFDRkdiYWJiaFlLaHZ5dzVucVZ1YTFSRWsyd0dlU3g1bnhkZWZXUjhBT3NGTjIvcEpNUmZESHhjKzBJV210VkNBWXRqTG5PdVVCSy9meitXRWVTaEY2VlZzaWNZM2VxU2hxMnA4Sngzb2Y5cHg5Y29IWTB3OE5HRFdnNExra1dPYTc1UHUvMXFPN1VKMkRMbHJUcDRkVGNZL00zZXlCUzF3NC9JOGZtcWdrZFAzS05PNGlxODcyczZ4RlBpL3RWU3o5a3hVMU5uNnJrdE9KN0QxV3pzNitBVkpHTHkxWEFkdTRmeWxLTW5DZlhmaGltK0VpNTRYMTdCMVlhMGc1RG9nRmFqUndjN1JvaFBWdU9sKzhrZFoyTnlLb3YxaVZOLzM1KzVOMFRwcXJDNUwvcWNFN1pIa0Q2bUt4em1wc2dUY2JXVE9iQXZWd3VKU0lUWkE3U3l4Sno0WHM2SXZlUTFCVWpGMTlLM2ZRWDVobTYzNU1vT3BRek9HdnZlNzV1QVdvNjFQNjI4S1lENzFpcmRVd25HQjcvQVNnS3BsVjRsT09WL05BNkxSQVNYanNPejVsSWp5MW1hUndLNG40dFE3L2N1ZFNBdnZiTUZKUk5SYUJseW5BaEwwcElMUW9wSThoaUoxWXVBPSIsIm1hYyI6ImFkOTkxNzAzODA1YzEwZmJhNmJjMmRlOTc1NWIyYTFhMWZjNjgxYTdmNmQ2OWUyYjhiYWI3ODdlZDEyNzA5MDciLCJ0YWciOiIifQ%3D%3D; expires=Fri, 03 Jan 2025 14:09:11 GMT; Max-Age=604800; path=\/; domain=getreica.com; secure; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 302,
+                            "body": "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" \/>\n        <meta http-equiv=\"refresh\" content=\"0;url='https:\/\/stage.getreica.com\/login'\" \/>\n\n        <title>Redirecting to https:\/\/stage.getreica.com\/login<\/title>\n    <\/head>\n    <body>\n        Redirecting to <a href=\"https:\/\/stage.getreica.com\/login\">https:\/\/stage.getreica.com\/login<\/a>.\n    <\/body>\n<\/html>",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Mark one notification as read",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/notifications\/mark-as-read\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/notifications\/mark-as-read\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "qui",
+                                    "description": "The ID of the mark as read."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "location",
+                                    "value": "https:\/\/stage.getreica.com\/login"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "text\/html; charset=utf-8"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Origin"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "XSRF-TOKEN=eyJpdiI6IkcrZC9LdFdmd2pONUlQbnlEWkZXMEE9PSIsInZhbHVlIjoiNENkZWZFeGU5UGVtemhmNWtyMkZJbk5GeGZkVHd5QmdsQTZaS2RvNzU4Z3hITXNVOUNkOUErWmJxUlFSNk1ZNmU3dVlNc2w2b1Nkb2d4dzRFNDk1WHVPQnlPUnVNL0VYd2hiZVN3ZHdFaFFFRzVKUFZiU2VGNkZJRTBtQ0MwbGgiLCJtYWMiOiIwNzY5MzYzMDQ1OWEwYmZmNGFiNDU0MzhjMmRjMWYyNzQ1Y2IyOWUzN2JhZDcwNDc4OTk1NzJkNTRiYmY2ZWIyIiwidGFnIjoiIn0%3D; expires=Fri, 03 Jan 2025 14:09:11 GMT; Max-Age=604800; path=\/; domain=getreica.com; secure; samesite=lax; reica_session=eyJpdiI6IkhpdXZsRmRZazlxUHF5eDhPQWFIMHc9PSIsInZhbHVlIjoic2lWVnpzOUxzTnBmTjFQQklDUjdmOG5pS3lWcTMrQXZtYkJBMGZFOFRESTJlUURNVUlRcEFxdzFITkw1cDR6c3VVZTJ2emxRZFJYcVlHd3E2Wit6bkYwMWN4a0RtR09CYUEzWnMySTkvbDlDUlpXUk5pOUtlUCtYcFJTdGtGcTkiLCJtYWMiOiJlMDdhMjNiZjA5NGU5YTkwZTdiZWI5ZTliNDkwZTcwYmMxNjVhZTczOTE2YjI0Zjk5NzQzZGUwZDlhMDA2Y2JjIiwidGFnIjoiIn0%3D; expires=Fri, 03 Jan 2025 14:09:11 GMT; Max-Age=604800; path=\/; domain=getreica.com; secure; httponly; samesite=lax; C07wKX1NCG9B2CEvFVNmqejrjCrmRYzsFUg8Hanv=eyJpdiI6InF4OTNlZ1dnTG50VWZxNXNFbG5xNlE9PSIsInZhbHVlIjoiWW9mcmlOSC9YUXpwUlZJR0JIQkRlbmNVWFpjOWhnSzZVdVJhdjdaQlNVNUd6RTc1ZGwxaWpxOFdDTlFuajhINkM5eHFMc2U1L0t2NmVrU2dVUFN3WStBeDVYZnJnZ0VxM25xVWdoampTRHhXME16ZkkwM2lVS0VmNGtwSXpJa29YN0k5Ty9tdDQ3L3NRWk1RMUhINDdrdjJqOXNKWWNSSWhQVFlpeHl5TXN2cXc0Ly9XQ24wN3lOZzlHM3RhRSs3UzRHNjFoUGRoUDdKNmUvSWdueUY0SDZld3pQYnhIWkZTS2pLVlR1TjJWQVB0cXRpSVFEc2VlK0dEdTMzbTFqV0F1TTBTaGlXTFJTd1lrSndwaGRxNGRrenBtZnh5VVNYT1RnN3FLVGxzdHNGcEgyeitKTWg1R2RUanRXek51NHVSUnlVNkVOZHhFb1VIMk5uNndmYW15MTVmZkhjaklYVExlSSs3YjgrazBUWUlidFFQWm1lSWxIRmk0UDNhQWhwV2h0TTFDcU02dm5vSldvWVB2d0dyYTBRdndPeXBmbmloVkl4RWVRV3RVNU5VVmtkMzlqcUsrWEpFNVJQZXpkMDBnSmpya2dzZ2lkMERlY2tMNHAyN2ZkWnJTbnM1MlhDNWxrRXI2aHovNWFhR0trbjBhNk9INE8rUWVhbDJjbzhtWmIzZ2Q5Y3QreFltaVBoVUYzKzJ4WFZhM2tjeHhTTkVPRmN5QlhsU1VRPSIsIm1hYyI6IjZiYmJjZmEwN2MyZWIwMGQzNTRiN2JhYTBmZWVkYTYxNjM3ZDA4MDZlZDc4MzNiZjYxZGRkMTk4ODk4YTUxYmIiLCJ0YWciOiIifQ%3D%3D; expires=Fri, 03 Jan 2025 14:09:11 GMT; Max-Age=604800; path=\/; domain=getreica.com; secure; httponly; samesite=lax; 4ZHnA2M3L37raX70NSfaqdbrrVK4SieFLeookkQJ=eyJpdiI6ImhQaWxocXN4WTdMOGZqcHdhQ2ZNVXc9PSIsInZhbHVlIjoiaVdrSVpuVTcveHpvV3p4c2xOalV0ejNTdXpQcnU0Q01UZ2JPcVB4Vm8xUi9ZZEg1WFFRQ3hIYUNOOVBlUHJmMUxQd2xueUVuTFBiemdoUEVCczMraklPV2xCbFhSNGEvZnJMSzZZKzFKeldGRG5HTERxaGpNZnhmcjVMZDdQL0J6YnNWYUZ1ZEd3YWh3dVJaRkZXSkZDT0FOYmhFUjArQUJPWVM4OUlFSWlsd0ZrdHVaYTJpWGVTcUptbHRSNVk4akdlaW43Ti9sYlcwVmxRVXcweUNZN0h2OC9HMlVLR0dZVVRRSUlMUGxFOTFJUE1kU2ZwcGE3Nkx5bERIaTF5Y1c1d2JrUHVYSzhkTUVlbWJiOTJBWlVEZWt0bjNuRDlpVjNNdlVYd3B6MnRVc0RwQUtMMXRWNEd6OVRVN0NmVHRQcUFRT2lUWmhTUmF3QkhVcW5wRUhPelVVa2pSRXBVamRoL3RVeVFTUFVBQ3ZUYVZWNE43Z2tSQW8vbmNlN1RCdENTQXFvMGlITjRNb0QwYVJhT0RDajJ5d2RDaDJhREdkNWRBWnBQWnJkbEptN3p3alJwOWo2K0xMME50bkc2WWhIRDIzZWpXTEZNa1QxMWJ1VkR6Unh1VlIxdEJzeFgvS1BiMXVuVGQ4MDFuNWpOVTVpK2tXa1g4RnR0NHBJZitPViszOTgyTHg5WExZU0ZLYm8yUENlN0kyc3JlVlIyRHlQbFpZOWE5VVFMcnp3eTlzYVVaZHYzUkk1OFRmZ0xxZXJlNWhaR1VxQit0c1VZMUZpZUxrQT09IiwibWFjIjoiZjQyZjY1ODNmZTM2MjMwMDUxMDk5N2U2ZDU2NTA2OGU3NmFjNjU2ZGU0YzliNTA3ODA0M2MwMmI5OWMwNDM4MyIsInRhZyI6IiJ9; expires=Fri, 03 Jan 2025 14:09:11 GMT; Max-Age=604800; path=\/; domain=getreica.com; secure; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 302,
+                            "body": "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" \/>\n        <meta http-equiv=\"refresh\" content=\"0;url='https:\/\/stage.getreica.com\/login'\" \/>\n\n        <title>Redirecting to https:\/\/stage.getreica.com\/login<\/title>\n    <\/head>\n    <body>\n        Redirecting to <a href=\"https:\/\/stage.getreica.com\/login\">https:\/\/stage.getreica.com\/login<\/a>.\n    <\/body>\n<\/html>",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Mark all notifications as read",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/notifications\/mark-all-as-read",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/notifications\/mark-all-as-read"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "location",
+                                    "value": "https:\/\/stage.getreica.com\/login"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "text\/html; charset=utf-8"
+                                },
+                                {
+                                    "key": "vary",
+                                    "value": "Origin"
+                                },
+                                {
+                                    "key": "set-cookie",
+                                    "value": "XSRF-TOKEN=eyJpdiI6ImhObVN5M0dibEVreHdKV3JlM0F1SVE9PSIsInZhbHVlIjoiWlNyV2tsKzJ4L1pCdWkySHBZeVE2Zmk5ZFBBQ1JucTZaMjZFcFBNcGdJZHc5WTdzOW1WblZXVFZoZ014TjVEaUlYS3Z1NXdmU0hNUFBVcGwxclhQelE0NVVWMFc0SkcyOUdUUldlZjU1KzFMN0tzc3pTVS9lL29IamkxS0ZQVWUiLCJtYWMiOiI5ZTc5YmE0NmQ1NDM0ODM3YjVmMWZmMTg3ODM3OWFmOWRlMGIwNWQxMzc1NWFmMjllMDY3ZGZhZTZiMDIzMzJkIiwidGFnIjoiIn0%3D; expires=Fri, 03 Jan 2025 14:09:11 GMT; Max-Age=604800; path=\/; domain=getreica.com; secure; samesite=lax; reica_session=eyJpdiI6IkhYRGozREdIajZxKy83TWNIMmgvL3c9PSIsInZhbHVlIjoiZU1HOCtBd0JvcExnRzdacEsraDIwZlZMa3JIUmx4Y0F3R0NWSjVwcXYwYWZDYnd3NDl6T2NCdEtQa2hxdXNGRnRvNnl0RmlhR3hsTHVpcmF3MmtCS0hhMkQvNjhCRHV4MEpUU09zemJOT0U3eklONDJScExweEwrMTVaRG5rWlQiLCJtYWMiOiJiNzk2ZjBhMzg0ZWVhYTQ1NzZjYzc4YjU1MzIzZmYwYjY0YjIyZmM3MTEyNTA4M2JmYjgzYTlkZTJmOTYyZTI3IiwidGFnIjoiIn0%3D; expires=Fri, 03 Jan 2025 14:09:11 GMT; Max-Age=604800; path=\/; domain=getreica.com; secure; httponly; samesite=lax; C07wKX1NCG9B2CEvFVNmqejrjCrmRYzsFUg8Hanv=eyJpdiI6IkR1Z1pGN1llYkp0Y1EvSnVHQThUNUE9PSIsInZhbHVlIjoieFB4cC9BaExLQzdXc3Q0Qnhldmd5M2Z2dTViL3FVTlh2SjRtM05CcXYvUW9mZ2QxSGU5YTlFU1VYeG50T2ZQOWZodVJPc1RJekRmNGwwTDlzYmE1WkFDUmF5MEk3WmttL0x6d0M5ZkZRK1FOcUxWRGd4bFBGR09zQldJUGZTbEZXdlNSVzh1eDRuZmxVeGxiNWx0bXFCa2c2TWRBT1o2U3g1ZFJLeFkwN1pXY2xFaC9OcThVQzJlK3kzNEhPaG0wYjhvMjNkN01BbEpOS1N2N3J0anJVSTNFSVp1bnpSa24rSi9GRzlUSy9Va09wNlhuUGVjVEFuUDlNczJISXROWFNMU0FCaFIxcXdwdWwvMHhTa2pvbnUvZ3I0bDBCZ1VhdExqenFDTno0ZWRMMnlmcXRPUFgzNHZEV2hjZy82YUNMT2FQbXFrL1RERUFEdkR6TENINFhzanpqMW01KzhvZnNxajQ5QS9zQmw1dENLekZXTWhsZmRrdXc4Q1YwQXhEVEVpdDY0NGtBZ05XOUp2MzI3MnNxVkI2djdIVXd0Z0NFSDFhY3BIZEFwS1orWHE4aGpWRXRLSmw3VXkrUCsyMmE5L1dqV05yZzNRMWU2NDdYSXRGWVF1c0xZWDdHWWtERjhTM0FFbEpvZUp0aXNiRi9IYWlnQ3NubkxXOHpHaDR1TGN1QkpQaU1tamN0aE53d0VmMWdSMllEcDE5UFBKSnlYMEhySVh2MWY4PSIsIm1hYyI6ImUyYjcxNDI0YmM2YzhjMGZmZTY2ODE5YjEyNDQ2Nzk4M2VmMTg4NzM2NzI4OWY2ZTMxNjQ4ZjIzZjQ5NGExNjUiLCJ0YWciOiIifQ%3D%3D; expires=Fri, 03 Jan 2025 14:09:11 GMT; Max-Age=604800; path=\/; domain=getreica.com; secure; httponly; samesite=lax; 4ZHnA2M3L37raX70NSfaqdbrrVK4SieFLeookkQJ=eyJpdiI6IkVIZzRJa2lycGhTSkFUT2Y2ZGh5MHc9PSIsInZhbHVlIjoia1pjaXY0c1l1V2VaS0NiZGxJNW5hUzhQbXJoR1RNL3c3Sld0M01CWVZPbHI5a3dac1c4WERvaDRIZkNhbkpabUpnNi9lSzNaUWxoc2EzdVpJVFRRN2ZjN3NtckhEeFFVR3V6cXl2bkxKMEFFVnNScUl1amZJTS9PQmhjNjFoeFpKV013NFBiUnBWQmJRMDJWK050dDFOVkUzNnZZRWNjRjAveUhvdmxJei95MFZ4bmxUazRHS0toMms4Nlo5Um9rN1pFYm5PdmtXQklIY0ROalRGclFLbmVFcFNpTVd5R3NDVVZQQ2V3dHR6ZkhGYzdaeEZZR0lFTlk2VzN4ZlVCNVg3eVhGU0xZZ24rbzBSVFQ3dlFJQzd1UlprWDRILzVJVFdyVmk4ejR2WFg3UXN2a3RKUzVpKy91VnNlVW9mU2o1aXJRdkxmSGdneVRqdG0rT1ZXa0FtWENsMGtQYlNIUUF6bDZZekZiR1Fia1I0Snc1cUdGZStHQitZczJrMzBBanQyMmZNMnBmT1RKM0FLN0NDSlZ1ZTRRdTFLcmMyZVcvcUhXVHpaeGhDSnUra2VXK2xHNllJeXp3UUJQNWxnbWhrQTRwQWRkdEsvUUlHZ1lLSWNnNTlpSW8xbzZYUnorMDI3SFloVExadC9uMC85emFmSUFtcTMxd0Y0bzZDa2l6bld0eTQvT0syT00ySldqaTdKYkhaNjFqYTJyRGdxdXZLOHdueC9vTDIrL3FCT1F6V0QrSjVFYVVUcFpyQzNUdjhMRmJPVXZjYTZiRll6WEhwcW1MQT09IiwibWFjIjoiYjZmMDNkNDIwM2ZiMTcxNGU3NjUzZmRmMDdkNDVmOTY5ODgxYTJkMDRiNTNiNDIwZThlZDcxNGVlOTcxNTU3NyIsInRhZyI6IiJ9; expires=Fri, 03 Jan 2025 14:09:11 GMT; Max-Age=604800; path=\/; domain=getreica.com; secure; httponly; samesite=lax; mdQ5sQkU7pcHGMvqPInpf1FGGxitJuLAh3nm8BFE=eyJpdiI6IjAxU21nRlgwUktSZVZLdGNVUVJRRkE9PSIsInZhbHVlIjoiTW9OdVk5ME83WGc2UEg4V2xJUDNBZTRKV1hiSkxMYlc4K3QvcThmNitmRTIxTXcycVdCR0ZtbGhqclVFTVc1aVhJdE9aekVTS1d4OEFGOUUyRkFDaDR1OHMxVmczUTkvL3ZRRnloVHQ0WlY4aVBtam1GZC9lTmlPVldpNjZMQTNRak53YXNHQXFYdUc4d1IzNUpkZW5VK2ZvR09MOUlYN1JySmNnYk11OWlzeUhJMzFkMzdOejdmQTFHSDQwWmR1Q3drSkdQdzRHME1uQXRkV3RBNlZDU0FpU3hieFZMcUtNYk1LQXRPa3pNRUdXYmtRSmZCVGVpOWM4c2N1VTZDVHBRS2k0TjRCRU5DT2t0bzBsTjM4M2tXUlZmalhzc1BFQXk4aS9tS1laTFJpN2ZRRDBtcTRnSm9lNjA2S0hPeUo0bmFsb2ZBcFlLckhCend6cnhlQ0JwYUZyMWJqQzFjeWttWEk4WlYxNDNNd0RRRjRpR3RRcEZzbFMrSzBwYmp2aUpvVU04Q1BrMnM2VFo3akhmdnpqR29oUFI2NlBvUFhGbHNHRkxzZ2ZVUm51d3hLam8yeG1ZUHhNL3lpS1ZuQnlLWXNEb2pTR1psNG5MR0E5ODJpNUp5eWVhRHV0YWt4L0xqMzA4a0hmclVLdjR3SmNvbUMvNkdZU2xCT2E1WWFVam11cUp4bGF3VnAxRzV0WEx0ZHVsSnBHbG1EVGppVk40TE1TL0pRTTJtNnQxd3VmS1QwTWVUWjh1SGxyYThNMWRxVmhvSjhsU0VCUUpwa3FmMVh3QT09IiwibWFjIjoiZGQ3ZTkxNTZmMDcyMjI5MGViOTRmZTM0YWZmNmVjYWI5YjM4Yzg2Mjc1NzZjMDRhODViMDc0M2NlMThjNjA0YyIsInRhZyI6IiJ9; expires=Fri, 03 Jan 2025 14:09:11 GMT; Max-Age=604800; path=\/; domain=getreica.com; secure; httponly; samesite=lax"
+                                }
+                            ],
+                            "code": 302,
+                            "body": "<!DOCTYPE html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" \/>\n        <meta http-equiv=\"refresh\" content=\"0;url='https:\/\/stage.getreica.com\/login'\" \/>\n\n        <title>Redirecting to https:\/\/stage.getreica.com\/login<\/title>\n    <\/head>\n    <body>\n        Redirecting to <a href=\"https:\/\/stage.getreica.com\/login\">https:\/\/stage.getreica.com\/login<\/a>.\n    <\/body>\n<\/html>",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Workflows",
+            "description": "\nAPIs for managing workflows",
+            "item": [
+                {
+                    "name": "Background removal",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/workflow\/background_remover",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/workflow\/background_remover"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"image\":\"\\\"data:image\\\/jpg;base64,\\\/9j\\\/4QC8RXhpZg...\\\"\",\"bg_template\":\"01hqnjhg6e7yw80002fyzc4bv4\",\"product\":\"01hb6da7tds27dec2aw7depd9h\",\"image_url\":\"https:\\\/\\\/genshoot.s3.eu-west-2.amazonaws.com\\\/resize\\\/2a845b77-b211-4b86-987b-5144ed65d474_out-524.png\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\n   \"data\": {\n       \"name\": \"01j7ethy1jj4sx017640jsqx4g 10-09-2024\",\n       \"user_id\": 15,\n       \"url\": \"https:\/\/stage.getreica.com\/storage\/placeholder.gif\",\n       \"request_id\": \"01j7ethy1jj4sx017640jsqx4g\",\n       \"id\": \"01j7ethy1wa323ee3b9a4865mm\",\n       \"updated_at\": \"2024-09-10T20:38:44.000000Z\",\n       \"created_at\": \"2024-09-10T20:38:44.000000Z\"\n   }\n}",
+                            "name": ""
+                        },
+                        {
+                            "header": [],
+                            "code": 404,
+                            "body": "{\n      \"data\": null,\n      \"message\": \"You do not have enough credit to complete this action, Get more credits <a class='underline' href='https:\/\/stage.getreica.com\/pricing'>here<\/a>\"\n}",
+                            "name": ""
+                        },
+                        {
+                            "header": [],
+                            "code": 404,
+                            "body": "{\n      \"data\": null,\n      \"message\": \"We are sorry but this endpoint is currently disabled, try later or contact us\"\n}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Resize",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/workflow\/resize",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/workflow\/resize"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"channel\":\"instagram\",\"image\":\"\\\"data:image\\\/jpg;base64,\\\/9j\\\/4QC8RXhpZg...\\\"\",\"image_url\":\"https:\\\/\\\/genshoot.s3.eu-west-2.amazonaws.com\\\/resize\\\/2a845b77-b211-4b86-987b-5144ed65d474_out-524.png\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\n   \"data\": {\n       \"name\": \"01j7ethy1jj4sx017640jsqx4g 10-09-2024\",\n       \"user_id\": 15,\n       \"url\": \"https:\/\/stage.getreica.com\/storage\/placeholder.gif\",\n       \"request_id\": \"01j7ethy1jj4sx017640jsqx4g\",\n       \"id\": \"01j7ethy1wa323ee3b9a4865mm\",\n       \"updated_at\": \"2024-09-10T20:38:44.000000Z\",\n       \"created_at\": \"2024-09-10T20:38:44.000000Z\"\n   }\n}",
+                            "name": ""
+                        },
+                        {
+                            "header": [],
+                            "code": 404,
+                            "body": "{\n      \"data\": null,\n      \"message\": \"You do not have enough credit to complete this action, Get more credits <a class='underline' href='https:\/\/stage.getreica.com\/pricing'>here<\/a>\"\n}",
+                            "name": ""
+                        },
+                        {
+                            "header": [],
+                            "code": 404,
+                            "body": "{\n      \"data\": null,\n      \"message\": \"We are sorry but this endpoint is currently disabled, try later or contact us\"\n}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Virtual try on",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/workflow\/vto",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/workflow\/vto"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"cloth_image\":\"\\\"data:image\\\/jpg;base64,\\\/9j\\\/4QC8RXhpZg...\\\"\",\"virtual_option_id\":\"01hv6xgwqvx3w7v9b27h30p06m\",\"image_url\":\"https:\\\/\\\/genshoot.s3.eu-west-2.amazonaws.com\\\/resize\\\/2a845b77-b211-4b86-987b-5144ed65d474_out-524.png\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\n   \"data\": {\n       \"name\": \"01j7ethy1jj4sx017640jsqx4g 10-09-2024\",\n       \"user_id\": 15,\n       \"url\": \"https:\/\/stage.getreica.com\/storage\/placeholder.gif\",\n       \"request_id\": \"01j7ethy1jj4sx017640jsqx4g\",\n       \"id\": \"01j7ethy1wa323ee3b9a4865mm\",\n       \"updated_at\": \"2024-09-10T20:38:44.000000Z\",\n       \"created_at\": \"2024-09-10T20:38:44.000000Z\"\n   }\n}",
+                            "name": ""
+                        },
+                        {
+                            "header": [],
+                            "code": 404,
+                            "body": "{\n      \"data\": null,\n      \"message\": \"You do not have enough credit to complete this action, Get more credits <a class='underline' href='https:\/\/stage.getreica.com\/pricing'>here<\/a>\"\n}",
+                            "name": ""
+                        },
+                        {
+                            "header": [],
+                            "code": 404,
+                            "body": "{\n      \"data\": null,\n      \"message\": \"We are sorry but this endpoint is currently disabled, try later or contact us\"\n}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "MissingHead",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/workflow\/missinghead",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/workflow\/missinghead"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"image\":\"\\\"data:image\\\/jpg;base64,\\\/9j\\\/4QC8RXhpZg...\\\"\",\"localization\":\"01hxtwp6w9nzy01z4m5k1r7ey9\",\"gender\":\"man\",\"image_url\":\"https:\\\/\\\/genshoot.s3.eu-west-2.amazonaws.com\\\/resize\\\/2a845b77-b211-4b86-987b-5144ed65d474_out-524.png\",\"face_expression\":\"smile\",\"bg_gradient\":\"#000000\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\n   \"data\": {\n       \"name\": \"01j7ethy1jj4sx017640jsqx4g 10-09-2024\",\n       \"user_id\": 15,\n       \"url\": \"https:\/\/stage.getreica.com\/storage\/placeholder.gif\",\n       \"request_id\": \"01j7ethy1jj4sx017640jsqx4g\",\n       \"id\": \"01j7ethy1wa323ee3b9a4865mm\",\n       \"updated_at\": \"2024-09-10T20:38:44.000000Z\",\n       \"created_at\": \"2024-09-10T20:38:44.000000Z\"\n   }\n}",
+                            "name": ""
+                        },
+                        {
+                            "header": [],
+                            "code": 404,
+                            "body": "{\n      \"data\": null,\n      \"message\": \"You do not have enough credit to complete this action, Get more credits <a class='underline' href='https:\/\/stage.getreica.com\/pricing'>here<\/a>\"\n}",
+                            "name": ""
+                        },
+                        {
+                            "header": [],
+                            "code": 404,
+                            "body": "{\n      \"data\": null,\n      \"message\": \"We are sorry but this endpoint is currently disabled, try later or contact us\"\n}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Localization",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/workflow\/localization",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/workflow\/localization"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"image\":\"\\\"data:image\\\/jpg;base64,\\\/9j\\\/4QC8RXhpZg...\\\"\",\"object\":\"01hxtwp6w9nzy01z4m5k1r7ey9\",\"age\":10,\"gender\":\"man\",\"image_url\":\"https:\\\/\\\/genshoot.s3.eu-west-2.amazonaws.com\\\/resize\\\/2a845b77-b211-4b86-987b-5144ed65d474_out-524.png\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\n   \"data\": {\n       \"name\": \"01j7ethy1jj4sx017640jsqx4g 10-09-2024\",\n       \"user_id\": 15,\n       \"url\": \"https:\/\/stage.getreica.com\/storage\/placeholder.gif\",\n       \"request_id\": \"01j7ethy1jj4sx017640jsqx4g\",\n       \"id\": \"01j7ethy1wa323ee3b9a4865mm\",\n       \"updated_at\": \"2024-09-10T20:38:44.000000Z\",\n       \"created_at\": \"2024-09-10T20:38:44.000000Z\"\n   }\n}",
+                            "name": ""
+                        },
+                        {
+                            "header": [],
+                            "code": 404,
+                            "body": "{\n      \"data\": null,\n      \"message\": \"You do not have enough credit to complete this action, Get more credits <a class='underline' href='https:\/\/stage.getreica.com\/pricing'>here<\/a>\"\n}",
+                            "name": ""
+                        },
+                        {
+                            "header": [],
+                            "code": 404,
+                            "body": "{\n      \"data\": null,\n      \"message\": \"We are sorry but this endpoint is currently disabled, try later or contact us\"\n}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Background marketplace",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/workflow\/backgroundmarketplace",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/workflow\/backgroundmarketplace"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"image\":\"\\\"data:image\\\/jpg;base64,\\\/9j\\\/4QC8RXhpZg...\\\"\",\"object\":\"#F6F7F8\",\"image_url\":\"https:\\\/\\\/genshoot.s3.eu-west-2.amazonaws.com\\\/resize\\\/2a845b77-b211-4b86-987b-5144ed65d474_out-524.png\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\n   \"data\": {\n       \"name\": \"01j7ethy1jj4sx017640jsqx4g 10-09-2024\",\n       \"user_id\": 15,\n       \"url\": \"https:\/\/stage.getreica.com\/storage\/placeholder.gif\",\n       \"request_id\": \"01j7ethy1jj4sx017640jsqx4g\",\n       \"id\": \"01j7ethy1wa323ee3b9a4865mm\",\n       \"updated_at\": \"2024-09-10T20:38:44.000000Z\",\n       \"created_at\": \"2024-09-10T20:38:44.000000Z\"\n   }\n}",
+                            "name": ""
+                        },
+                        {
+                            "header": [],
+                            "code": 404,
+                            "body": "{\n      \"data\": null,\n      \"message\": \"You do not have enough credit to complete this action, Get more credits <a class='underline' href='https:\/\/stage.getreica.com\/pricing'>here<\/a>\"\n}",
+                            "name": ""
+                        },
+                        {
+                            "header": [],
+                            "code": 404,
+                            "body": "{\n      \"data\": null,\n      \"message\": \"We are sorry but this endpoint is currently disabled, try later or contact us\"\n}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Zoomout",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/workflow\/outpainting",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/workflow\/outpainting"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"top\":256,\"right\":512,\"bottom\":256,\"left\":512,\"image\":\"\\\"data:image\\\/jpg;base64,\\\/9j\\\/4QC8RXhpZg...\\\"\",\"image_url\":\"https:\\\/\\\/genshoot.s3.eu-west-2.amazonaws.com\\\/resize\\\/2a845b77-b211-4b86-987b-5144ed65d474_out-524.png\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\n   \"data\": {\n       \"name\": \"01j7ethy1jj4sx017640jsqx4g 10-09-2024\",\n       \"user_id\": 15,\n       \"url\": \"https:\/\/stage.getreica.com\/storage\/placeholder.gif\",\n       \"request_id\": \"01j7ethy1jj4sx017640jsqx4g\",\n       \"id\": \"01j7ethy1wa323ee3b9a4865mm\",\n       \"updated_at\": \"2024-09-10T20:38:44.000000Z\",\n       \"created_at\": \"2024-09-10T20:38:44.000000Z\"\n   }\n}",
+                            "name": ""
+                        },
+                        {
+                            "header": [],
+                            "code": 404,
+                            "body": "{\n      \"data\": null,\n      \"message\": \"You do not have enough credit to complete this action, Get more credits <a class='underline' href='https:\/\/stage.getreica.com\/pricing'>here<\/a>\"\n}",
+                            "name": ""
+                        },
+                        {
+                            "header": [],
+                            "code": 404,
+                            "body": "{\n      \"data\": null,\n      \"message\": \"We are sorry but this endpoint is currently disabled, try later or contact us\"\n}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Copycat",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/workflow\/copycat",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/workflow\/copycat"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"image\":\"\\\"data:image\\\/jpg;base64,\\\/9j\\\/4QC8RXhpZg...\\\"\",\"strength\":1.6,\"image_url\":\"https:\\\/\\\/genshoot.s3.eu-west-2.amazonaws.com\\\/resize\\\/2a845b77-b211-4b86-987b-5144ed65d474_out-524.png\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\n   \"data\": {\n       \"name\": \"01j7ethy1jj4sx017640jsqx4g 10-09-2024\",\n       \"user_id\": 15,\n       \"url\": \"https:\/\/stage.getreica.com\/storage\/placeholder.gif\",\n       \"request_id\": \"01j7ethy1jj4sx017640jsqx4g\",\n       \"id\": \"01j7ethy1wa323ee3b9a4865mm\",\n       \"updated_at\": \"2024-09-10T20:38:44.000000Z\",\n       \"created_at\": \"2024-09-10T20:38:44.000000Z\"\n   }\n}",
+                            "name": ""
+                        },
+                        {
+                            "header": [],
+                            "code": 404,
+                            "body": "{\n      \"data\": null,\n      \"message\": \"You do not have enough credit to complete this action, Get more credits <a class='underline' href='https:\/\/stage.getreica.com\/pricing'>here<\/a>\"\n}",
+                            "name": ""
+                        },
+                        {
+                            "header": [],
+                            "code": 404,
+                            "body": "{\n      \"data\": null,\n      \"message\": \"We are sorry but this endpoint is currently disabled, try later or contact us\"\n}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Upscale",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/workflow\/upscale",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/workflow\/upscale"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"scale\":\"2\",\"image\":\"\\\"data:image\\\/jpg;base64,\\\/9j\\\/4QC8RXhpZg...\\\"\",\"image_url\":\"https:\\\/\\\/genshoot.s3.eu-west-2.amazonaws.com\\\/resize\\\/2a845b77-b211-4b86-987b-5144ed65d474_out-524.png\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\n   \"data\": {\n       \"name\": \"01j7ethy1jj4sx017640jsqx4g 10-09-2024\",\n       \"user_id\": 15,\n       \"url\": \"https:\/\/stage.getreica.com\/storage\/placeholder.gif\",\n       \"request_id\": \"01j7ethy1jj4sx017640jsqx4g\",\n       \"id\": \"01j7ethy1wa323ee3b9a4865mm\",\n       \"updated_at\": \"2024-09-10T20:38:44.000000Z\",\n       \"created_at\": \"2024-09-10T20:38:44.000000Z\"\n   }\n}",
+                            "name": ""
+                        },
+                        {
+                            "header": [],
+                            "code": 404,
+                            "body": "{\n      \"data\": null,\n      \"message\": \"You do not have enough credit to complete this action, Get more credits <a class='underline' href='https:\/\/stage.getreica.com\/pricing'>here<\/a>\"\n}",
+                            "name": ""
+                        },
+                        {
+                            "header": [],
+                            "code": 404,
+                            "body": "{\n      \"data\": null,\n      \"message\": \"We are sorry but this endpoint is currently disabled, try later or contact us\"\n}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Generate",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/workflow\/generate",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/workflow\/generate"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"options\":[\"hair-style-1\",\"general-21\",\"accessories-2\"]}"
+                        },
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\n   \"data\": {\n       \"name\": \"01j7ethy1jj4sx017640jsqx4g 10-09-2024\",\n       \"user_id\": 15,\n       \"url\": \"https:\/\/stage.getreica.com\/storage\/placeholder.gif\",\n       \"request_id\": \"01j7ethy1jj4sx017640jsqx4g\",\n       \"id\": \"01j7ethy1wa323ee3b9a4865mm\",\n       \"updated_at\": \"2024-09-10T20:38:44.000000Z\",\n       \"created_at\": \"2024-09-10T20:38:44.000000Z\"\n   }\n}",
+                            "name": ""
+                        },
+                        {
+                            "header": [],
+                            "code": 404,
+                            "body": "{\n      \"data\": null,\n      \"message\": \"You do not have enough credit to complete this action, Get more credits <a class='underline' href='https:\/\/stage.getreica.com\/pricing'>here<\/a>\"\n}",
+                            "name": ""
+                        },
+                        {
+                            "header": [],
+                            "code": 404,
+                            "body": "{\n      \"data\": null,\n      \"message\": \"We are sorry but this endpoint is currently disabled, try later or contact us\"\n}",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Workflows Options",
+            "description": "\nAPIs for getting the necessary options to run the workflows",
+            "item": [
+                {
+                    "name": "Background Removal options",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/workflow\/options\/background_templates",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/workflow\/options\/background_templates"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "Fetches and caches the background removal options."
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\n{\n       \"name\": \"Modern table 1\",\n       \"id\": \"01hqn06m95vaftssq1fjrbn0v4\",\n       \"background\": \"backgrounds\/iFvbaQtWvIRrDs3KTNkEGJChAeOXSL4pAyDOaYxI.png\",\n       \"background_url\": \"https:\/\/genshoot.s3.eu-west-2.amazonaws.com\/backgrounds\/iFvbaQtWvIRrDs3KTNkEGJChAeOXSL4pAyDOaYxI.png\"\n   },\n   {\n       \"name\": \"Glass Table 1\",\n       \"id\": \"01hqnhc10k5dxtjaveyqr0prtm\",\n       \"background\": \"backgrounds\/shhlm9CdHCPpqCILVwUKwvTUdN3cZYtYJ3W2wSxQ.png\",\n       \"background_url\": \"https:\/\/genshoot.s3.eu-west-2.amazonaws.com\/backgrounds\/shhlm9CdHCPpqCILVwUKwvTUdN3cZYtYJ3W2wSxQ.png\"\n   },\n}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Products options",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/workflow\/options\/objects",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/workflow\/options\/objects"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "Fetches and caches the genshoot product options."
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\n {\n   \"name\": \"bag\",\n   \"id\": \"01haa0xwstpnc73ck95n4zbe6b\",\n   \"translated_label\": \"\"\n},\n{\n   \"name\": \"jacket\",\n   \"id\": \"01haa0ymdb1b07xqxzdybcea5m\",\n   \"translated_label\": \"\"\n},\n}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Virtual Try-On options",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/workflow\/options\/vto",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/workflow\/options\/vto"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "Fetches and caches the virtual try-on options."
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\n {\n   \"type\": \"Upper body\",\n   \"gender\": \"woman\",\n   \"thumbnail\": \"thumbnails\/cxilxvfuBfiCLNx8T8IF06aIznN2gnDMHHtA7CoC.png\",\n   \"id\": \"01hv1zjxv72v0tbtmzt738fn26\",\n   \"thumbnail_url\": \"https:\/\/genshoot.s3.eu-west-2.amazonaws.com\/thumbnails\/cxilxvfuBfiCLNx8T8IF06aIznN2gnDMHHtA7CoC.png\"\n},\n{\n   \"type\": \"Upper body\",\n   \"gender\": \"woman\",\n   \"thumbnail\": \"thumbnails\/yLVtMbg76WOrmkpdazQchSVAK6DFIsEFIfhoD6vk.png\",\n   \"id\": \"01hv7g9gq9nxzgjnxx8axegx6n\",\n   \"thumbnail_url\": \"https:\/\/genshoot.s3.eu-west-2.amazonaws.com\/thumbnails\/yLVtMbg76WOrmkpdazQchSVAK6DFIsEFIfhoD6vk.png\"\n},\n}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Localization options",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/workflow\/options\/localization",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/workflow\/options\/localization"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "Fetches and caches the localization options."
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\n\t{\n\t\"value\": \"Italian\",\n\t\t\"id\": \"01hxsnzfkyjdqrytmbfe4gccp2\",\n\t\t\"translated_label\": \"\"\n\t},\n\t{\n\t\t\"value\": \"Afghan\",\n\t\t\"id\": \"01hxtwp6w9nzy01z4m5k1r7ey3\",\n\t\t\"translated_label\": \"\"\n\t}\n}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Generate options",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/workflow\/options\/generate",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/workflow\/options\/generate"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "Return all the prompt generate options."
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\n   \"section\": \"Style of Photo\",\n   \"features\": [\n       {\n           \"feature_name\": \"General\",\n           \"options\": {\n               \"General 1\": {\n                   \"id\": \"01hgzf5ysqqkkgdkzjtfjm20kw\",\n                   \"image\": \"https:\/\/genshoot.s3.eu-west-2.amazonaws.com\/options\/FFmYuZr1NPNKl7m2tTOyngKH5DNAJbOBpGctlXXy.png\"\n               }\n           }\n       }\n   ]\n}",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "bearer",
+        "bearer": [
+            {
+                "key": "token",
+                "type": "string"
+            }
+        ]
+    }
+}
