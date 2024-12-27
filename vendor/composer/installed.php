@@ -3,7 +3,7 @@
         'name' => 'soiposervices/reica',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'fdfae79c659963a9601500d801e4ef013062a46e',
+        'reference' => '29362cd57e013556908874c315efac1ce25f8ebf',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -954,7 +954,7 @@
         'soiposervices/reica' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'fdfae79c659963a9601500d801e4ef013062a46e',
+            'reference' => '29362cd57e013556908874c315efac1ce25f8ebf',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
