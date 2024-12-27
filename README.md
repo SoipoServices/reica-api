@@ -3,7 +3,7 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/soiposervices/reica.svg?style=flat-square)](https://packagist.org/packages/soiposervices/reica)
 [![Total Downloads](https://img.shields.io/packagist/dt/soiposervices/reica.svg?style=flat-square)](https://packagist.org/packages/soiposervices/reica)
-![GitHub Actions](https://github.com/soiposervices/reica/actions/workflows/tests.yml/badge.svg)
+[![run-tests](https://github.com/SoipoServices/reica-api/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/SoipoServices/reica-api/actions/workflows/tests.yml)
 
 
 This package provides a seamless interface to interact with the getreica.com API, enabling developers to access its powerful image generation and manipulation features. Designed with ease of use in mind, this client simplifies integration into your applications, allowing you to leverage getreica’s capabilities for creating realistic images tailored to your needs.
