@@ -1,12 +1,12 @@
 <?php
 
-namespace Soiposervices\Http\Connector;
+namespace Soiposervices\Reica\Http\Connector;
 
 use Saloon\Http\Auth\TokenAuthenticator;
 use Saloon\Http\Connector;
 use Saloon\Traits\Plugins\HasTimeout;
 
-class ForgeConnector extends Connector
+class ReicaConnector extends Connector
 {
     use HasTimeout;
 
@@ -14,7 +14,7 @@ class ForgeConnector extends Connector
     
     protected int $requestTimeout = 30;
 
-    public function __construct(public readonly string $token) {}
+    public function __construct() {}
     
     protected function defaultAuth(): TokenAuthenticator
     {
@@ -23,7 +23,7 @@ class ForgeConnector extends Connector
 
     public function resolveBaseUrl(): string
     {
-        return 'https://getreica.com/api/v1/';
+        return config('reica.base_url');
     }
 
     protected function defaultHeaders(): array

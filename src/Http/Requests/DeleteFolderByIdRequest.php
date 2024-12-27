@@ -1,9 +1,9 @@
 <?php
-namespace Soiposervices\Http\Requests;
+namespace  Soiposervices\Reica\Http\Requests;
 
-use App\Http\Requests\BaseRequest;
+use Soiposervices\Reica\Http\Requests\BaseRequest;
 use Saloon\Enums\Method;
-use Soiposervices\Http\Enum\Endpoint;
+use Soiposervices\Reica\Http\Enum\Endpoint;
 
 class DeleteFolderByIdRequest extends BaseRequest
 {

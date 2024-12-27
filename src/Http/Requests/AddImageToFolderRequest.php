@@ -1,12 +1,12 @@
 <?php
 
-namespace Soiposervices\Http\Requests;
+namespace  Soiposervices\Reica\Http\Requests;
 
-use App\Http\Requests\BaseRequest;
+use Soiposervices\Reica\Http\Requests\BaseRequest;
 use Saloon\Contracts\Body\HasBody;
 use Saloon\Enums\Method;
 use Saloon\Traits\Body\HasJsonBody;
-use Soiposervices\Http\Enum\Endpoint;
+use Soiposervices\Reica\Http\Enum\Endpoint;
 
 class AddImageToFolderRequest extends BaseRequest implements HasBody
 {

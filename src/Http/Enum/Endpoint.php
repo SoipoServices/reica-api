@@ -1,6 +1,6 @@
 <?php
 
-namespace Soiposervices\Http\Enum;
+namespace  Soiposervices\Reica\Http\Enum;
 
 // This class contains all the endpoints that the API that the ReicaConnector class will use
 enum Endpoint: string

@@ -3,7 +3,7 @@
 namespace App\Http\Requests;
 
 use Saloon\Enums\Method;
-use Soiposervices\Http\Enum\Endpoint;
+use Soiposervices\Reica\Http\Enum\Endpoint;
 
 class RerunImageRequest extends BaseRequest
 {

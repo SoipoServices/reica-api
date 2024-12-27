@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Requests;
+namespace Soiposervices\Reica\Http\Requests;
 
 use Saloon\Http\Request;
-use Soiposervices\Http\Enum\Endpoint;
+use Soiposervices\Reica\Http\Enum\Endpoint;
 
 abstract class BaseRequest extends Request
 {
