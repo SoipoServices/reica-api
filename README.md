@@ -1,4 +1,4 @@
-# Official Reica Package
+# Official Reica API Package
 
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/soiposervices/reica.svg?style=flat-square)](https://packagist.org/packages/soiposervices/reica)
