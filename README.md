@@ -31,9 +31,35 @@ composer require soiposervices/reica
 
 ## Usage
 
+The purpose of this package is to provide a simple and intuitive interface to interact with the getreica.com API. The package is designed to be easy to use, with minimal dependencies and a straightforward API structure. The following sections provide an overview of the package’s key features and usage examples.
+
+### Authentication
+
+To authenticate with the getreica.com API, you need to provide your API key. You can obtain your API key by registering at https://getreica.com/user/api-tokens. Once you have your API key, you can use it to authenticate with the API, setting the .env variable `REICA_API_TOKEN`.
+
 ```php
-// Usage description here
+	REICA_API_TOKEN=your-api-token;
 ```
+
+### Sending Requests
+
+We use Saloon 3, a package that provides a simple and intuitive interface for sending HTTP requests. The ReicaConnector class is responsible for sending requests to the getreica.com API. You can create an instance of the ReicaConnector class and use it to send requests to the API.
+
+
+```php
+    $conn = new ReicaConnector();
+
+    $request = new CreateChildFolderRequest(
+        name: "New Folder",
+        folderId: "1c090c3f-a004-4fdc-ba76-28adcd75a6ea",
+    );
+
+    $response = $conn->send($request);
+```
+
+### Api documentation
+
+To get a list of all available requests, you can check the [API documentation](https://getreica.com/docs).
 
 ### Testing
 
